@@ -21,7 +21,7 @@ const writeFile = fileContent => {
 
 const copyFile = copyFileResponse => {
     return new Promise((resolve, reject) => {
-        fs.copyFile("./app.js", copyFileResponse, err => {
+        fs.copyFile('./src/style.css', './dist/style.css', err => {
             if (err) {
                 reject(err);
                 return;
